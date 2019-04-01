@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wildcard subdomains</title>
+</head>
+<body>
+
+  <h1 id="subdomain"></h1>
+  <img id="avatar">
+
+  <script>
+    var subdomain = window.location.hostname.split('.')[0];
+    document.getElementById('subdomain').textContent = subdomain;
+    var avatarSrc = 'https://api.adorable.io/avatars/285/' + subdomain + '.png';
+    document.getElementById('avatar').src = avatarSrc;
+  </script>
+</body>
+</html>
